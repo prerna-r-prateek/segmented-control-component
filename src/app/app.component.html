@@ -1,0 +1,9 @@
+<app-segmented-control 
+  [segments]="['Segment 1', 'Segment 2', 'Segment 3']" 
+  [selectedSegment]="selectedSegment" 
+  (segmentChanged)="onSegmentChanged($event)">
+</app-segmented-control>
+
+<div>
+  Selected Segment: {{ selectedSegment }}
+</div>

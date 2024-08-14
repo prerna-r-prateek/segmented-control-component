@@ -1,0 +1,7 @@
+<div class="segmented-control">
+    <button *ngFor="let segment of segments" 
+            [class.active]="segment === selectedSegment" 
+            (click)="selectSegment(segment)">
+      {{ segment }}
+    </button>
+  </div>
